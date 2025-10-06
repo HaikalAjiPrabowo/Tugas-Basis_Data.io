@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Basis Data</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Basis Data</h1>
+      <p>Tugas pertama kuliah Basis Data — ditulis ala blog pribadi</p>
+    </header>
+
+    <nav>
+      <a href="#post1">Harapan</a>
+      <a href="#post2">Basis Data</a>
+      <a href="#post3">Conceptual DB</a>
+      <a href="#post4">Physical Model</a>
+      <a href="#post5">ERD: Entitas, Atribut, Relasi</a>
+    </nav>
+
+    <article id="post1">
+      <h2>Post 1: Harapan Saya dari Kuliah Basis Data</h2>
+      <p>
+        Kalau jujur, saya pribadi berharap kuliah Basis Data ini bisa bikin saya ngerti gimana sih data itu disimpan dan diatur biar rapi. Soalnya di zaman sekarang, hampir semua aplikasi pasti butuh database. Dari aplikasi belanja online,
+        media sosial, sampai sistem absensi kampus pun pasti pakai database.
+      </p>
+      <p>
+        Jadi, harapan saya setelah ikut mata kuliah ini: saya bisa ngerti dasar-dasar database, bisa bikin desain database sendiri, dan paling penting bisa nulis query SQL tanpa bingung lagi. Intinya, semoga ilmunya bisa kepakai juga di
+        dunia kerja nanti.
+      </p>
+    </article>
+
+    <article id="post2">
+      <h2>Post 2: Apa Itu Basis Data?</h2>
+      <p>
+        Kalau dengar kata “basis data”, sebenarnya simpel banget: basis data itu tempat buat nyimpen data biar nggak berantakan. Bayangin aja kayak lemari arsip digital. Bedanya, kalau lemari butuh tenaga buat bongkar-bongkar, basis data
+        bisa dicari cepat dengan bantuan komputer.
+      </p>
+      <p>
+        Contoh sehari-hari: akun Instagram kita, data belanja di e-commerce, atau daftar mahasiswa di kampus—semua itu ada di database. Nah, biar database bisa dipakai, biasanya kita butuh DBMS (Database Management System) kayak MySQL,
+        PostgreSQL, atau Oracle. Jadi, basis data itu ibarat “otaknya” aplikasi yang kita pakai tiap hari.
+      </p>
+    </article>
+
+    <article id="post3">
+      <h2>Post 3: Apa Itu Conceptual DB?</h2>
+      <p>
+        Sebelum bikin database beneran di komputer, biasanya kita mulai dari gambaran besarnya dulu. Nah, di sinilah <i>Conceptual Database</i> alias model konseptual berperan. Jadi, ini semacam peta atau blueprint yang nunjukin entitas
+        (objek penting), atribut (detail entitas), dan hubungan antar entitas.
+      </p>
+      <p>
+        Contohnya, kalau bikin sistem kampus: ada entitas <b>Mahasiswa</b>, <b>Dosen</b>, sama <b>Mata Kuliah</b>. Relasinya bisa “Mahasiswa mengambil Mata Kuliah” atau “Dosen mengajar Mata Kuliah”. Biasanya digambar pakai ERD (Entity
+        Relationship Diagram). Dengan model ini, kita bisa ngerti dulu alur datanya sebelum nyemplung ke teknis.
+      </p>
+    </article>
+
+    <article id="post4">
+      <h2>Post 4: Apa Itu Physical Model?</h2>
+      <p>
+        Nah, setelah kita punya model konseptual, langkah selanjutnya adalah bikin versi teknisnya, yaitu <i>Physical Model</i>. Kalau tadi baru blueprint, sekarang udah masuk tahap nyata: bikin tabel, ngatur kolom, kasih tipe data, bikin
+        <i>primary key</i> sama <i>foreign key</i>.
+      </p>
+      <p>
+        Contoh gampang: entitas Mahasiswa tadi jadi tabel dengan kolom NIM, Nama, dan Alamat. Entitas Mata Kuliah jadi tabel lain, lalu ada tabel tambahan buat nyimpen data KRS. Nah, model fisik ini yang akhirnya kita implementasikan di
+        MySQL atau PostgreSQL, biar database bisa jalan sesuai rencana.
+      </p>
+    </article>
+
+    <article id="post5">
+      <h2>Post 5: Apa Itu Entitas, Atribut, dan Relasi dalam ERD?</h2>
+      <p>Dalam <b>ERD (Entity Relationship Diagram)</b>, ada tiga komponen utama yang penting banget: <b>Entitas</b>, <b>Atribut</b>, dan <b>Relasi</b>. Ketiganya saling berkaitan buat menggambarkan struktur data dalam sistem.</p>
+
+      <p><b>1. Entitas</b> adalah objek utama yang ingin kita simpan datanya. Misalnya dalam sistem kampus, entitasnya bisa berupa <i>Mahasiswa</i>, <i>Dosen</i>, atau <i>Mata Kuliah</i>. Setiap entitas mewakili tabel di database.</p>
+
+      <p><b>2. Atribut</b> adalah detail atau ciri-ciri dari entitas. Misalnya entitas <i>Mahasiswa</i> punya atribut <i>NIM</i>, <i>Nama</i>, <i>Alamat</i>, dan <i>Tanggal Lahir</i>. Atribut ini nantinya jadi kolom di tabel database.</p>
+
+      <p>
+        <b>3. Relasi</b> menggambarkan hubungan antar entitas. Misalnya, relasi “Mahasiswa mengambil Mata Kuliah” menunjukkan hubungan antara entitas <i>Mahasiswa</i> dan <i>Mata Kuliah</i>. Biasanya digambarkan dengan garis penghubung
+        dalam diagram ERD.
+      </p>
+
+      <p>
+        Dengan memahami entitas, atribut, dan relasi, kita bisa bikin model database yang terstruktur dan mudah dikembangkan. ERD membantu agar sistem yang dibangun punya alur data yang jelas sebelum diimplementasikan ke DBMS seperti MySQL
+        atau PostgreSQL.
+      </p>
+    </article>
+
+    <article id="postX">
+      <h2>Tutorial cara install mysql (DBMS) di windows, silahkan langsung saja tonton videonya</h2>
+
+      <!-- video YouTube disisipkan di sini -->
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://youtube.com/embed/3fijaoGFm00"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+    </article>
+
+    <footer>
+      <p>
+        © 2025 - Catatan Kuliah Basis Data |
+        <a href="https://www.ubpkarawang.ac.id" class="btn-link" target="_blank">Kunjungi UBP Karawang</a>
+      </p>
+    </footer>
+  </body>
+</html>
