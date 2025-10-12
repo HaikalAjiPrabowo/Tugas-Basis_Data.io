@@ -87,6 +87,42 @@
       </p>
     </article>
 
+    <article id="post6">
+      <h2>Post 6: Apa Itu Primary Key, Foreign Key, dan Candidate Key?</h2>
+      <p><b>Primary Key</b> adalah atribut unik dalam tabel yang berfungsi mengidentifikasi setiap baris data secara unik. Nilainya tidak boleh sama dan tidak boleh kosong.</p>
+      <ul>
+        <li>Contoh: id_mahasiswa, id_dosen, id_buku, id_transaksi, id_pembayaran</li>
+      </ul>
+
+      <p><b>Foreign Key</b> adalah atribut yang menjadi penghubung antar tabel. Nilai Foreign Key di satu tabel harus sesuai dengan Primary Key di tabel lain.</p>
+      <ul>
+        <li>Contoh: id_dosen di tabel MataKuliah, id_mahasiswa di tabel KRS, id_buku di tabel Peminjaman, id_customer di tabel Transaksi, id_produk di tabel Detail_Transaksi</li>
+      </ul>
+
+      <p><b>Candidate Key</b> adalah atribut atau kombinasi atribut yang bisa jadi Primary Key karena unik. Dari beberapa Candidate Key, satu dipilih menjadi Primary Key.</p>
+      <ul>
+        <li>Contoh: NIM dan Email pada tabel Mahasiswa, NIP dan No_HP pada tabel Dosen, ISBN dan Judul_Buku pada tabel Buku, No_Plat dan No_STNK pada tabel Kendaraan, No_Pesanan dan Kode_Barang pada tabel Penjualan</li>
+      </ul>
+    </article>
+
+    <article id="post7">
+      <h2>Post 7: Apa Itu Relasi pada ERD dan Mengapa Many-to-Many Tidak Baik Digunakan?</h2>
+      <p><b>Relasi</b> adalah hubungan antar entitas dalam ERD. Ada tiga jenis relasi utama:</p>
+      <ul>
+        <li><b>One-to-One (1:1)</b> — satu entitas berhubungan dengan satu entitas lain, misalnya satu mahasiswa punya satu kartu perpustakaan.</li>
+        <li><b>One-to-Many (1:N)</b> — satu entitas berhubungan dengan banyak entitas lain, misalnya satu dosen mengajar banyak mata kuliah.</li>
+        <li><b>Many-to-Many (M:N)</b> — banyak entitas berhubungan dengan banyak entitas lain, misalnya mahasiswa mengambil banyak mata kuliah, dan satu mata kuliah diambil oleh banyak mahasiswa.</li>
+      </ul>
+
+      <p><b>Mengapa Many-to-Many tidak baik digunakan?</b></p>
+      <p>
+        Karena database relasional tidak bisa langsung menyimpan relasi M:N. Jika dipaksakan, data akan sulit dikelola dan bisa menyebabkan redundansi serta inkonsistensi. Oleh karena itu, hubungan M:N perlu dipecah menjadi dua relasi
+        One-to-Many menggunakan tabel penghubung (junction table).
+      </p>
+
+      <p>Contoh: relasi antara Mahasiswa dan MataKuliah dipecah menjadi tabel KRS yang berisi id_krs, id_mahasiswa, id_matakuliah, dan nilai.</p>
+    </article>
+
     <article id="postX">
       <h2>Tutorial cara install mysql (DBMS) di windows, silahkan langsung saja tonton videonya</h2>
 
@@ -104,7 +140,7 @@
         </iframe>
       </div>
     </article>
-
+    <!-- Footer -->
     <footer>
       <p>
         © 2025 - Catatan Kuliah Basis Data |
